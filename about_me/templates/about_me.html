@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<div class="about" style="background-color: gray ;border-bottom: 3px solid skyblue;" id="about_sec">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12" >
+          
+          <div class="card" style="margin: 15px;background-color: lightskyblue;border-radius: 20%;text-align: center;">
+            <img class="card-img-top" src="/static/images/me2.png" alt="Card image" style="text-align: center;vertical-align: middle;border-radius: 20%;">
+            <div class="card-body">
+              <h4 class="card-title">Mehedi Hasan Shanto</h4>
+              <p class="card-text">A Full Stack Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 desc" style="text-align: center;font-size: 1.2em;">
+          <h1
+            style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;padding-top: 8px;" >
+            About Me</h1>
+          <br>
+          <h3>Full Name: Mehedi Hasan Shanto</h3>
+          <p style="line-height: 2.5rem;font-weight: 700;text-align: center;">
+              
+              Education: CSE,Khulna University
+              <br>
+              Skills: Full Stack Development
+              <br>
+              Languages: C, C++, Java, Python, JavaScript
+              <br>
+              Tools: Django, React JS, JQuery,Android Studio
+        </p>
+        <h3 style="text-align: center;color: darkblue;font-weight: bold;">Contact ?</h3>
+        <a href="#contact_sec"><button type="button" class="btn btn-primary">Click Here</button></a>
+        </div>
+      </div>
+</div>
+<div style="padding: 20px;background-color: gray;">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card" style="margin: 15px;box-shadow: 10px 10px 5px white;background-color: gray;color: whitesmoke;text-align: center;">
+            <img class="card-img-top" src="/static/images/project11.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Projects</h4>
+              <p class="card-text">I have several pojects on different framework.Are you interested??</p>
+              <a href="{% url 'project_index' %}"><button type="button" style="width: 100%;" class="btn btn-primary">Projects</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 desc">
+            <div class="card" style="margin: 15px;box-shadow: 10px 10px 5px white;background-color: gray;color: whitesmoke;text-align: center;">
+                <img class="card-img-top" src="/static/images/blog1.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Blog</h4>
+                  <p class="card-text">I have Written some article on different topics.I will be glad if you make a review of them. click to review..</p>
+                  <a href="{% url 'blog_index' %}"><button type="button" style="width: 100%;" class="btn btn-primary">Blog</button></a>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+
+<!-- Footer -->
+
+
+<div class="social" style="border-bottom: 1px solid skyblue;border-top: 1px solid skyblue;">
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row py-4 d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+        <h6 class="mb-0">Social Network!</h6>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-6 col-lg-7 text-center text-md">
+
+        <!-- Facebook -->
+        <a class="fb-ic" href="https://www.facebook.com/mehash.32" target="_blank">
+          <i class="fa fa-facebook-f fa-2x white-text mr-4"> </i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+</div>
+<!-- Footer Links -->
+
+
+  <!-- Grid row -->
+  <div class="row mt-2" style="text-align: center;">
+
+    <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-4">
+
+     
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-4">
+
+      <!-- Links -->
+      <h6 class="text-uppercase font-weight-bold" id="contact_sec">Contact</h6>
+      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+      <p>
+        <i class="fa fa-home mr-3"></i> Gollamari,Khulna</p>
+      <p>
+        <i class="fa fa-envelope mr-3"></i> shanto1832@cseku.ac.bd</p>
+      <p>
+        <i class="fa fa-envelope mr-3"></i> mshanto123@gmai.com</p>
+      <p>
+         <i class="fa fa-envelope mr-3"></i> mehash.ku.180232@gmail.com</p>
+      <p>
+        <i class="fa fa-phone mr-3"></i> +880 1932694037</p>
+      <p>
+            <i class="fa fa-phone mr-3"></i> +880 1521239706</p>
+
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+
+{% endblock %}
+
+

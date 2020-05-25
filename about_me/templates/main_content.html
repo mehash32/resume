@@ -1,0 +1,25 @@
+
+  {% extends "base.html" %}
+  {% load static %}
+  {% block page_content %}
+  <header style="text-align: center;font-size: 1.3em;">
+    <div class="jumbotron mb-0" style="background: url('/static/images/mod-show.png') no-repeat center fixed; 
+    background-size: cover;min-height: 80vh;">
+        <div class="container" >
+        
+            <h1  style="color:skyblue ;font-family: cursive;font-size: 2.2em;font-style: bold;padding-bottom: 5px ;padding-top:25vh;">
+                Hey , 
+                Welcome....
+                You're In!!
+                <p>
+                  Mission is to organize my information and make it universally accessible and useful.
+                  
+      
+                </p>
+                <p>Have a look......</p>
+                <a href="{% url 'project_index' %}"><button type="button"  class="btn btn-primary" >See more !</button></a>
+            </h1>
+        </div>
+      </div>
+</header>
+{% endblock %}
