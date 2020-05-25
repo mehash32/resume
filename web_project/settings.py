@@ -26,7 +26,7 @@ SECRET_KEY = 'c2%cgn5xj$8#b#69m-)zh6v(6%5s4zr(4bd-ft8mb11xguto$i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['shanto-portfolio.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['shanto-portfolio.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -121,6 +121,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
-STATIC_URL = '/static/'
 STATIC_ROOT =os.path.join(BASE_DIR,'staticfiles')
+STATIC_URL = '/static/'
+
