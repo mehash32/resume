@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
-<h1>Projects</h1>
-<div class="row" style="background-color: gray;">
+<h1 style="padding: 20px;">Projects</h1>
+<div class="row" style="background-color: gray;padding: 20px;">
 {% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
-            <img class="card-img-top" src="{% static project.image %}" style="size: 100%;background-color: whitesmoke;">
+    <div class="col-md-4" style="text-align: center;height: 50%;">
+        <div class="card text-white bg-dark border-primary mb-2" style="background-color: black;">
+            <img class="card-img-top" src="{% static project.image %}">
             <div class="card-body">
-                <h5 class="card-title" style="background-color: whitesmoke;padding-bottom: 8px;padding-top: 2px;">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
+                <h5 class="card-title" style="background-color: violet;padding-bottom: 8px;padding-top: 2px;">{{ project.title }}</h5>
+                <p > {{ project.description  | slice:":35"  }}...</p>
                 <a href="{% url 'project_detail' project.pk %}"
-                   class="btn btn-primary">
+                   class="btn btn-success">
                     Read More
                 </a>
             </div>
