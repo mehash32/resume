@@ -1,4 +1,5 @@
 
+ 
   {% extends "base.html" %}
   {% load static %}
   {% block page_content %}
@@ -7,17 +8,17 @@
     background-size: cover;min-height: 80vh;">
         <div class="container" >
         
-            <h1  style="color:skyblue ;font-family: cursive,sans-serif,'Times New Roman', Times, serif;font-size: 2.2em;font-style: bold;padding-bottom: 5px ;padding-top:25vh;">
+            <h1  style="color:skyblue ;font-family: cursive;font-size: 2.2em;font-style: bold;padding-bottom: 5px ;padding-top:25vh;">
                 Hey , 
                 Welcome....
                 You're In!!
-                <p>
+                <p style="color: cornsilk; font: outline; font-family: Georgia, 'Times New Roman', Times, serif;">
                   Mission is to organize my information and make it universally accessible and useful.
                   
       
                 </p>
-                <p>Have a look......</p>
-                <a href="{% url 'project_index' %}"><button type="button"  class="btn btn-primary" >See more !</button></a>
+                <p >Have a look......</p>
+                <a href="{% url 'about_me' %}"><button type="button"  class="btn btn-info" style="font-family: Georgia, 'Times New Roman', Times, serif;">See more !</button></a>
             </h1>
         </div>
       </div>
